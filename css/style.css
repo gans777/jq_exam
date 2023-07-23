@@ -1,0 +1,30 @@
+body {
+	padding: 20px;
+  background-color: rgb(160, 236, 132);
+}
+#numbers_of_ankets{
+  width: 100px;
+}
+.pagination_menu{
+  display: none;
+}
+.wrap_all_info{
+  display: flex;
+  flex-direction: column;
+}
+.wrap_anket{
+  display: flex;
+  flex-direction: column;
+}
+.other_info{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 100%;
+}
+.other_info > div {
+  border: 1px solid gray;
+  margin: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
