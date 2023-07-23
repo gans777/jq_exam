@@ -21,10 +21,7 @@ $(document).ready(function(){
     });
   });
   $(".next").click(function(){
-    if (d.length <= current_page + entry_on_page){
-      console.log('i am next');
-      return
-    } else {
+    if (d.length > current_page + entry_on_page){
       current_page += entry_on_page;
       output(d,entry_on_page,current_page);
       if (d.length <= current_page + entry_on_page){
@@ -33,13 +30,10 @@ $(document).ready(function(){
       if ($('.previous').attr('style') == 'display: none;'){
         $('.previous').show();
       }
-    }
+    } 
   });
   $(".previous").click(function(){
-    if ( current_page - entry_on_page < 0){
-      console.log('i am previous');
-      return
-    } else {
+    if ( current_page - entry_on_page >= 0){
       current_page -= entry_on_page;
       output(d,entry_on_page,current_page);
       if ( current_page - entry_on_page < 0){
