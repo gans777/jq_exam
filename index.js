@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var d;
-  var entry_on_page = 3; // количество записей на странице
+  var entry_on_page = 10; // количество записей на странице
   var current_page = 0; // текущая страница
   $(".json_request").click(function(){
     let n = $('#numbers_of_ankets').val();// количество записей
